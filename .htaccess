@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteRule    ^channel/([A-Za-z0-9-]+)/?$    channel/?c=$1    [NC,L]
+RewriteRule    ^channel/([^/]*)&v=([^/]*)$    channel/?c=$1&v=$2    [NC,L]
+RewriteRule    ^bwf/([A-Za-z0-9-]+)/?$    bwf/?y=$1    [NC,L]
+RewriteRule    ^series/([A-Za-z0-9_-]+)/?$    series/?g=$1    [NC,L]
